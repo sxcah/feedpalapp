@@ -32,6 +32,8 @@
         <activity android:name=".ProductDetailsActivity"
             android:exported="false"/>
 
+        <activity android:name=".CheckOutActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

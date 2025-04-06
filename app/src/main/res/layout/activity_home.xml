@@ -115,10 +115,10 @@
 
     <HorizontalScrollView
         android:id="@+id/categoriesScrollView"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:paddingStart="16dp"
+        android:paddingStart="32dp"
         android:paddingEnd="16dp"
         android:scrollbars="none"
         app:layout_constraintTop_toBottomOf="@+id/categoriesTitle"
@@ -241,9 +241,10 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="140dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
             app:cardCornerRadius="8dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -278,12 +279,14 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="140dp"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
             app:cardCornerRadius="8dp">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="8dp"
                 android:clickable="true"
@@ -316,6 +319,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/bottomNavigationView"
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:orientation="horizontal"
@@ -340,6 +344,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/cartButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -350,7 +355,8 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_shopping_cart" />
+                android:src="@drawable/ic_cart" />
+
         </LinearLayout>
 
     </LinearLayout>
