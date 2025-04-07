@@ -27,7 +27,7 @@ class HomePageActivity : AppCompatActivity() {
         }
 
         // Example: Setting a dummy username
-        setUsername("BuddyLover")
+        setUsername("SpyderLounge")
 
         // You can add logic here to fetch user data, categories, best sellers, etc.
     }
