@@ -5,6 +5,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 
 class ProductDetailsActivity : AppCompatActivity() {
 
@@ -15,6 +16,7 @@ class ProductDetailsActivity : AppCompatActivity() {
     private lateinit var ratingPercentTextView: TextView
     private lateinit var backButton: ImageView
     private lateinit var addToCartButton: Button
+    private var isItemInCart = false
     // Add other views as needed
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,7 +38,19 @@ class ProductDetailsActivity : AppCompatActivity() {
         }
 
         addToCartButton.setOnClickListener {
-            addToCartButton.text = "Added To Cart"
+            isItemInCart = !isItemInCart
+
+            if (isItemInCart) {
+                addToCartButton.text = "Remove from Cart"
+                val cartDrawable = ContextCompat.getDrawable(this, R.drawable.ic_trash)
+                addToCartButton.setCompoundDrawablesWithIntrinsicBounds(null, null, cartDrawable, null)
+                addToCartButton.backgroundTintList = ContextCompat.getColorStateList(this, R.color.red)
+            } else {
+                addToCartButton.text = "Add to Cart"
+                val cartDrawable = ContextCompat.getDrawable(this, R.drawable.ic_cart)
+                addToCartButton.setCompoundDrawablesWithIntrinsicBounds(null, null, cartDrawable, null)
+                addToCartButton.backgroundTintList = ContextCompat.getColorStateList(this, R.color.light_green)
+            }
         }
 
         // Retrieve the product ID from the Intent
