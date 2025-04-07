@@ -26,6 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Shipping Address"
+                android:fontFamily="@font/my_custom_fonts"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@android:color/black"
@@ -35,15 +36,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Full Name"
+                android:fontFamily="@font/my_custom_fonts"
                 android:inputType="textPersonName"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"/>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Street Address"
+                android:fontFamily="@font/my_custom_fonts"
                 android:inputType="textPostalAddress"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -55,15 +60,19 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="City"
+                    android:fontFamily="@font/my_custom_fonts"
                     android:inputType="textPostalAddress"
-                    android:layout_marginEnd="8dp" />
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/black"/>
 
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="State/Province"
-                    android:inputType="textPostalAddress" />
+                    android:fontFamily="@font/my_custom_fonts"
+                    android:inputType="textPostalAddress"
+                    android:textColor="@color/black"/>
 
             </LinearLayout>
 
@@ -72,24 +81,18 @@
                 android:layout_height="wrap_content"
                 android:hint="Zip/Postal Code"
                 android:inputType="textPostalAddress"
+                android:fontFamily="@font/my_custom_fonts"
                 android:layout_marginTop="8dp"
-                android:layout_marginBottom="16dp" />
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Payment Method"
+                android:text="Ordered Items"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="@android:color/black"
-                android:layout_marginBottom="8dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Order Items"
-                android:textSize="18sp"
-                android:textStyle="bold"
+                android:fontFamily="@font/my_custom_fonts"
                 android:textColor="@android:color/black"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp" />
@@ -122,12 +125,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Cooked Lean Meats"
+                            android:fontFamily="@font/my_custom_fonts"
                             android:textSize="16sp"
                             android:textColor="@android:color/black" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="₱ 123.45"
+                            android:fontFamily="@font/my_custom_fonts"
                             android:textSize="14sp"
                             android:textColor="@color/colorPrimary" />
                     </LinearLayout>
@@ -162,11 +167,13 @@
                             android:layout_height="wrap_content"
                             android:text="High Quality Kibble"
                             android:textSize="16sp"
+                            android:fontFamily="@font/my_custom_fonts"
                             android:textColor="@android:color/black" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="₱ 123.45"
+                            android:fontFamily="@font/my_custom_fonts"
                             android:textSize="14sp"
                             android:textColor="@color/colorPrimary" />
                     </LinearLayout>
@@ -203,6 +210,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Subtotal"
+                android:fontFamily="@font/my_custom_fonts"
                 android:textSize="16sp"
                 android:textColor="@android:color/black" />
             <TextView
@@ -212,6 +220,7 @@
                 android:layout_weight="1"
                 android:gravity="end"
                 android:text="₱ 246.90"
+                android:fontFamily="@font/my_custom_fonts"
                 android:textSize="16sp"
                 android:textColor="@android:color/black" />
         </LinearLayout>
@@ -226,6 +235,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Shipping"
+                android:fontFamily="@font/my_custom_fonts"
                 android:textSize="16sp"
                 android:textColor="@android:color/black" />
             <TextView
@@ -235,6 +245,7 @@
                 android:layout_weight="1"
                 android:gravity="end"
                 android:text="₱ 15.00"
+                android:fontFamily="@font/my_custom_fonts"
                 android:textSize="16sp"
                 android:textColor="@android:color/black" />
         </LinearLayout>
@@ -249,6 +260,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Total"
+                android:fontFamily="@font/my_custom_fonts"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary" />
@@ -258,6 +270,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="end"
+                android:fontFamily="@font/my_custom_fonts"
                 android:text="₱ 261.90"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -270,6 +283,7 @@
             android:layout_height="wrap_content"
             android:text="PLACE ORDER"
             android:layout_marginTop="16dp"
+            android:fontFamily="@font/my_custom_fonts"
             android:backgroundTint="@color/colorPrimary"
             android:textColor="@android:color/white" />
 

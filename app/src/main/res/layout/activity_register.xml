@@ -26,6 +26,7 @@
         android:text="FeedPal"
         android:textColor="@android:color/black"
         android:textSize="24sp"
+        android:fontFamily="@font/my_custom_fonts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoPlaceholderRegister" />
@@ -46,6 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
+            android:fontFamily="@font/my_custom_fonts"
             android:inputType="textEmailAddress"
             android:textColor="@android:color/black" />
 
@@ -67,6 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username"
+            android:fontFamily="@font/my_custom_fonts"
             android:inputType="text"
             android:textColor="@android:color/black" />
 
@@ -89,6 +92,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
+            android:fontFamily="@font/my_custom_fonts"
             android:inputType="textPassword"
             android:textColor="@android:color/black" />
 
@@ -111,6 +115,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Confirm Password"
+            android:fontFamily="@font/my_custom_fonts"
             android:inputType="textPassword"
             android:textColor="@android:color/black" />
 
@@ -126,6 +131,7 @@
         android:backgroundTint="@color/colorPrimary"
         android:text="Register"
         android:textColor="@android:color/white"
+        android:fontFamily="@font/my_custom_fonts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayoutRegisterConfirmPassword" />

@@ -26,6 +26,7 @@
         android:text="FeedPal"
         android:textColor="@android:color/black"
         android:textSize="24sp"
+        android:fontFamily="@font/my_custom_fonts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoPlaceholderLogin" />
@@ -46,6 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
+            android:fontFamily="@font/my_custom_fonts"
             android:inputType="textEmailAddress"
             android:textColor="@android:color/black" />
 
@@ -67,6 +69,7 @@
             android:id="@+id/editTextLoginPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/my_custom_fonts"
             android:hint="Password"
             android:inputType="textPassword"
             android:textColor="@android:color/black" />
@@ -83,6 +86,7 @@
         android:backgroundTint="@color/colorPrimary"
         android:text="Login"
         android:textColor="@android:color/white"
+        android:fontFamily="@font/my_custom_fonts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayoutLoginPassword" />
@@ -94,6 +98,7 @@
         android:layout_marginTop="16dp"
         android:text="Don't have an account? Register"
         android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/my_custom_fonts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />

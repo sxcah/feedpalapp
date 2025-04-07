@@ -94,6 +94,7 @@
             android:layout_weight="1"
             android:hint="Search the shop"
             android:textSize="16sp"
+            android:fontFamily="@font/my_custom_fonts"
             android:textColorHint="@android:color/darker_gray"
             android:textColor="@android:color/black"
             android:layout_marginStart="8dp" />
@@ -110,6 +111,7 @@
         android:textColor="@android:color/black"
         android:layout_marginTop="24dp"
         android:layout_marginStart="16dp"
+        android:fontFamily="@font/my_custom_fonts"
         app:layout_constraintTop_toBottomOf="@+id/searchBar"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -148,6 +150,7 @@
                     android:text="Food"
                     android:textColor="@android:color/black"
                     android:textSize="14sp"
+                    android:fontFamily="@font/my_custom_fonts"
                     android:layout_marginTop="4dp" />
             </LinearLayout>
 
@@ -168,6 +171,7 @@
                     android:text="Accessories"
                     android:textColor="@android:color/black"
                     android:textSize="14sp"
+                    android:fontFamily="@font/my_custom_fonts"
                     android:layout_marginTop="4dp" />
             </LinearLayout>
 
@@ -188,6 +192,7 @@
                     android:text="Toys"
                     android:textColor="@android:color/black"
                     android:textSize="14sp"
+                    android:fontFamily="@font/my_custom_fonts"
                     android:layout_marginTop="4dp" />
             </LinearLayout>
 
@@ -208,6 +213,7 @@
                     android:text="Pup"
                     android:textColor="@android:color/black"
                     android:textSize="14sp"
+                    android:fontFamily="@font/my_custom_fonts"
                     android:layout_marginTop="4dp" />
             </LinearLayout>
 
@@ -225,6 +231,7 @@
         android:textColor="@android:color/black"
         android:layout_marginTop="24dp"
         android:layout_marginStart="16dp"
+        android:fontFamily="@font/my_custom_fonts"
         app:layout_constraintTop_toBottomOf="@+id/categoriesScrollView"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -267,12 +274,14 @@
                     android:text="Cooked Lean Meats"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
+                    android:fontFamily="@font/my_custom_fonts"
                     android:layout_marginTop="8dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="₱ 123.45"
                     android:textSize="16sp"
+                    android:fontFamily="@font/my_custom_fonts"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -304,6 +313,7 @@
                     android:layout_height="wrap_content"
                     android:text="High Quality Kibble"
                     android:textSize="14sp"
+                    android:fontFamily="@font/my_custom_fonts"
                     android:textColor="@android:color/black"
                     android:layout_marginTop="8dp" />
                 <TextView
@@ -311,6 +321,7 @@
                     android:layout_height="wrap_content"
                     android:text="₱ 123.45"
                     android:textSize="16sp"
+                    android:fontFamily="@font/my_custom_fonts"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold" />
             </LinearLayout>
