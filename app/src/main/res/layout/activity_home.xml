@@ -54,17 +54,6 @@
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/notificationIcon"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:padding="6dp"
-            android:background="?selectableItemBackgroundBorderless"
-            android:src="@drawable/ic_notification_bell"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout

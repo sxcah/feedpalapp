@@ -19,7 +19,7 @@ class HomePageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         cartButton = findViewById(R.id.cartButton)
-        usernameTextView = findViewById(R.id.usernameTextView)
+        usernameTextView = findViewById(R.id.usernameTextView)g
         profileHomeButton = findViewById(R.id.profileHomeButton)
 
         val loggedInUsername = intent.getStringExtra("loggedInUsername")
