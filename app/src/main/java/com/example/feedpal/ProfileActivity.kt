@@ -42,10 +42,12 @@ class ProfileActivity : AppCompatActivity() {
         }
 
         buttonLogout.setOnClickListener {
-            clearLoggedInUser() // Implement this function to clear session data
+            clearLoggedInUser()
             val intent = Intent(this, LoginActivity::class.java)
+            // Flags to clear the activity stack and prevent going back to HomeActivity
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
-            finish()
+            finish() // Finish the ProfileActivity
         }
 
         backButtonProfile.setOnClickListener() {
