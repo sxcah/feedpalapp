@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
-            android:id="@+id/profileImage"
+            android:id="@+id/profileHomeButton"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:background="@drawable/circle_placeholder"
@@ -31,9 +31,9 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginStart="16dp"
-            app:layout_constraintTop_toTopOf="@+id/profileImage"
-            app:layout_constraintBottom_toBottomOf="@+id/profileImage"
-            app:layout_constraintStart_toEndOf="@+id/profileImage"
+            app:layout_constraintTop_toTopOf="@+id/profileHomeButton"
+            app:layout_constraintBottom_toBottomOf="@+id/profileHomeButton"
+            app:layout_constraintStart_toEndOf="@+id/profileHomeButton"
             app:layout_constraintEnd_toStartOf="@+id/notificationIcon">
 
             <TextView
@@ -117,11 +117,11 @@
 
     <HorizontalScrollView
         android:id="@+id/categoriesScrollView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:paddingStart="32dp"
-        android:paddingEnd="16dp"
+        android:paddingEnd="32dp"
         android:scrollbars="none"
         app:layout_constraintTop_toBottomOf="@+id/categoriesTitle"
         app:layout_constraintStart_toStartOf="parent"
@@ -134,11 +134,16 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/foodCategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center_horizontal"
-                android:layout_marginEnd="16dp">
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onCategoryListClicked"
+                android:tag="Food">
                 <View
                     android:layout_width="60dp"
                     android:layout_height="60dp"
@@ -155,11 +160,16 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/accessoriesCategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center_horizontal"
-                android:layout_marginEnd="16dp">
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onCategoryListClicked"
+                android:tag="Accessories">
                 <View
                     android:layout_width="60dp"
                     android:layout_height="60dp"
@@ -176,11 +186,16 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/toysCategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center_horizontal"
-                android:layout_marginEnd="16dp">
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onCategoryListClicked"
+                android:tag="Toys">
                 <View
                     android:layout_width="60dp"
                     android:layout_height="60dp"
@@ -197,11 +212,15 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/pupCategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center_horizontal"
-                android:layout_marginEnd="16dp">
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onCategoryListClicked"
+                android:tag="Pup">
                 <View
                     android:layout_width="60dp"
                     android:layout_height="60dp"

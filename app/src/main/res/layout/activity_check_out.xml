@@ -33,6 +33,7 @@
                 android:layout_marginBottom="8dp" />
 
             <EditText
+                android:id="@+id/fullNameEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Full Name"
@@ -42,6 +43,7 @@
                 android:textColor="@color/black"/>
 
             <EditText
+                android:id="@+id/streetAddressEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Street Address"
@@ -56,6 +58,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/cityEditText"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -66,6 +69,7 @@
                     android:textColor="@color/black"/>
 
                 <EditText
+                    android:id="@+id/stateProvinceEditText"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -77,6 +81,7 @@
             </LinearLayout>
 
             <EditText
+                android:id="@+id/zipPostalCodeEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Zip/Postal Code"

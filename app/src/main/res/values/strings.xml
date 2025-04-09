@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">FeedPal</string>
+    <string name="back">Back</string>
+    <string name="order_receipt">Order Receipt</string>
+    <string name="shipping_information">Shipping Information</string>
+    <string name="full_name_placeholder">Full Name: John Doe</string>
+    <string name="address_placeholder">Address: 123 Main St, Anytown, CA 91234</string>
+    <string name="order_details">Order Details</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="shipping">Shipping</string>
+    <string name="total">Total</string>
+    <string name="peso_amount_placeholder">₱ 0.00</string>
+    <string name="thank_you_message">Thank you for your order!</string>
 </resources>

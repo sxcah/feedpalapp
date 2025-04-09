@@ -15,6 +15,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var buttonLogin: Button
     private lateinit var textViewRegisterLink: TextView
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -31,18 +32,24 @@ class LoginActivity : AppCompatActivity() {
         }
 
         buttonLogin.setOnClickListener {
-            val email = editTextLoginEmail.text.toString()
+            val emailOrUsername = editTextLoginEmail.text.toString() // Using the same EditText for email or username
             val password = editTextLoginPassword.text.toString()
 
-            // Simplified login: Check if both email and password fields are not empty
-            if (email.isNotEmpty() && password.isNotEmpty()) {
-                // If both fields are filled, consider login successful and redirect
+            // Check against the in-memory registeredUsers list
+            val loggedInUser = registeredUsers.find {
+                (it.email == emailOrUsername || it.username == emailOrUsername) && it.passwordHash == password // In a real app, compare hashed passwords
+            }
+
+            if (loggedInUser != null) {
+                // Login successful, navigate to the home page
                 val intent = Intent(this, HomePageActivity::class.java)
+                intent.putExtra("loggedInUsername", loggedInUser.username)
+                intent.putExtra("loggedInEmail", loggedInUser.email)
                 startActivity(intent)
                 finish() // Optional: Close the LoginActivity
             } else {
-                // If either field is empty, display an error message
-                Toast.makeText(this, "Please enter both email and password", Toast.LENGTH_SHORT).show()
+                // Login failed, show an error message
+                Toast.makeText(this, "Invalid email/username or password", Toast.LENGTH_SHORT).show()
             }
         }
     }

@@ -34,6 +34,15 @@
 
         <activity android:name=".CheckOutActivity"
             android:exported="false"/>
+
+        <activity android:name=".ProfileActivity"
+            android:exported="false"/>
+
+        <activity android:name=".CategoryActivity"
+            android:exported="false"/>
+
+        <activity android:name=".ReceiptActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>
