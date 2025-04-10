@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Base.Theme.FeedPal" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <style name="Base.Theme.FeedPal" parent="Theme.MaterialComponents.Light.NoActionBar">
     </style>
     <style name="Theme.FeedPal" parent="Base.Theme.FeedPal">
         <item name="colorPrimary">@color/colorPrimary</item>
