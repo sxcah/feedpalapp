@@ -5,11 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context=".LoginActivity"
+    tools:context=".HomePageActivity"
     >
 
+    <ImageView
+        android:id="@+id/ImagePlaceHolder"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/circle_placeholder"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        />
+
     <Button
-        android:id="@+id/ButtonLogin"
+        android:id="@+id/ButtonLogout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="12dp"
@@ -27,30 +38,62 @@
         />
 
     <LinearLayout
-        android:id="@+id/userNamePlaceholderContainer"
-        android:layout_width="wrap_content"
+        android:id="@+id/ContainerUsername"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="64dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:paddingLeft="76dp"
+        android:paddingRight="76dp"
         app:layout_constraintEnd_toStartOf="parent"
-        app:flow_horizontalGap="24dp"
-        app:layout_constraintStart_toEndOf="parent">
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImagePlaceHolder">
 
         <TextView
-            android:id="@+id/userNameHeaderPlaceHolder"
-            android:layout_width="wrap_content"
+            android:id="@+id/HeaderUsername"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/userNameHeader"
             android:fontFamily="@font/custom_font"
-
-            android:layout_marginEnd="24dp"
+            android:layout_weight="1"
             />
 
         <TextView
+            android:id="@+id/UserNameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/usernamePlaceholder"
+            android:fontFamily="@font/custom_font"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ContainerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="76dp"
+        android:paddingRight="76dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ContainerUsername">
+
+        <TextView
+            android:id="@+id/HeaderEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/emailHeader"
+            android:fontFamily="@font/custom_font"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/EmailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emailPlaceholder"
             android:fontFamily="@font/custom_font"
             />
 
